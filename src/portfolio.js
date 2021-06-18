@@ -12,7 +12,7 @@ const greeting = {
   username: "Ayman Ali",
   title: "Hello, I'm Ayman",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs / Vuejs and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Yz2mtP964or1xsIqUTLrp1hr9mYCJsdQ/view?usp=sharing",
@@ -112,6 +112,12 @@ const educationInfo = {
         "An Empirial Study and Simulation of EHR Software in Light of COVID-19"
       ]
     },
+    {
+      schoolName: "Georgia Institute of Technology",
+      logo: require("./assets/images/education.jpeg"),
+      subHeader: "Masters of Science in Computer Science",
+      duration: "August 2021 - May 2023",
+    },
     
   ]
 };
@@ -143,35 +149,44 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Clever Programmer",
-      companylogo: require("./assets/images/cpLogo.png"),
-      date: "September 2020 – Present",
+      role: "Web Develop Intern",
+      company: "TREC LLC",
+      companylogo: require("./assets/images/workLogo.png"),
+      date: "December 2021 – May 2021",
       desc:
-        "Changing lives of developers one line of code at a time.",
+        "Team Lead at Real Estate Start-Up and mainly setting up offer listing and transaction system.",
+    
+    descBullets: [
+      "Properly submit offer with offer form",
+      "List multiple properties",
+      "Buyer, Seller, and Vendor dashboard and functionalities",
+    ]
+  },
+    {
+      role: "Virtual Tech and Information Intern",
+      company: "Gao Tek",
+      companylogo: require("./assets/images/workLogo2.jpg"),
+      date: "October 2020 – February 2021",
       descBullets: [
-        "Custom building applications",
-        "Coaching",
-        "Streaming live on YouTube",
-        "Creating tutorials"
+        "Tech writing for online stores",
+        "Tech support, webpages, and datasheets developments",
+        "Digital marketing, SEO"
+      ],
+    },
+    {
+      role: "Software Engineer",
+      company: "SUNY New Paltz Projects",
+      companylogo: require("./assets/images/cpLogo.png"),
+      date: "August 2018 – May 2021",
+      desc:
+        "Worked on numerous software projects",
+      descBullets: [
+        "Artificial Neural Network for text detection (Python)",
+        "Tutoring",
+        "Gravity Gym and Instagram VueJS App",
+        "Creating Electronic Health Record software"
       ]
     },
-    {
-      role: "Product Owner (PSD2)",
-      company: "TREC LLC",
-      companylogo: require("./assets/images/ersteLogo.jpg"),
-      date: "July 2019 – September 2020",
-      desc:
-        "I lead software developers building the API for the bank in order to fulfil the PSD2 regulation requirements."
-    },
-    {
-      role: "Junior Information Security & Systems Representative",
-      company: "Gao Tek",
-      companylogo: require("./assets/images/vodafoneLogo.png"),
-      date: "November 2018 – July 2019",
-      desc:
-        "I've conducted internal audit making sure the organization is compliant with the GDPR."
-    }
   ]
 };
 
@@ -283,24 +298,54 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Projects ReactJS/NextJS",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "With Love for Developing cool stuff, I love to clone apps and teach others what I have learnt.",
 
   blogs: [
     {
       url:
-        "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+        "https://airbnb-clone-44382.web.app/",
+      title: "AirBnB Clone",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Explore unique stays, entire homes, search dates, and book your stay efficiently with this ReactJS AirBNB Clone"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://disney-clone-d1e27.web.app/",
+      title: "Disney Clone",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "Browse through a clean and functional user interface with the Disney clone application build."
+    },
+    {
+    url: "https://nextjs-hulu2-0.vercel.app/",
+    title: "Hulu 2.0 Clone",
+    description:
+      "Find various movie series, genres, and shows with the HULU 2.0 NextJS build  ."
+  },
+  {
+    url: " https://netflix-meghsohor.netlify.app/",
+    title: "Netflix Clone",
+    description:
+      "Sign up, sign in, view movies, and play trailers with this interactive clone of Netflix."
+  },
+  {
+    url: "https://slack-clone-challenge-6207b.web.app/room/vgXn17Vv6QUVi8fDmlxc",
+    title: "Slack Clone",
+    description:
+      "The Slack app allows users to interact with one another, send messages, and create new chat channels with the help of Firebase."
+  },
+  {
+    url: "  https://tesla-clone-reactjs.herokuapp.com/",
+    title: "Tesla Clone",
+    description:
+      "This app allows you to explore various Tesla models while also providing beautiful animation feature to enhance the feel of the app."
+  },
+  {
+    url: "https://gravity-gym.herokuapp.com/",
+    title: "Gravity Gym",
+    description:
+      "Fitness app utilizing NodeJs to track user fitness, add or update existing exercise log, and compare results with friends or family."
+  },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -349,7 +394,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "reactjs", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
