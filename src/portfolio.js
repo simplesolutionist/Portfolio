@@ -149,10 +149,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Web Develop Intern",
+      role: "Web Developer Intern",
       company: "TREC LLC",
       companylogo: require("./assets/images/workLogo.png"),
-      date: "December 2021 – May 2021",
+      date: "December 2020 – May 2021",
       desc:
         "Team Lead at Real Estate Start-Up and mainly setting up offer listing and transaction system.",
     
